@@ -9,8 +9,9 @@ repositories {
 }
 
 allure {
-    autoconfigure = true
     version = '2.13.8'
+    autoconfigure = true
+    aspectjweaver = true
 
     useJUnit5 {
         version = '2.13.8'
@@ -22,7 +23,7 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    testImplementation "io.qameta.allure:allure-java-commons:2.13.8"
+    testImplementation 'io.qameta.allure:allure-java-commons:2.13.8'
 
     // add JUnit5
     implementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
