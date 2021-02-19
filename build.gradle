@@ -37,3 +37,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task should_success(type: Test){
+    useJUnitPlatform {
+        includeTags 'Should Success'
+    }
+}

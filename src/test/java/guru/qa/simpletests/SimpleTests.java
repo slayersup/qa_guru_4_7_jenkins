@@ -1,5 +1,6 @@
 package guru.qa.simpletests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -12,6 +13,7 @@ public class SimpleTests {
     static int result;
 
     @Test
+    @Tag("Should Success")
     void assertSimpleSuccessTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
@@ -28,6 +30,7 @@ public class SimpleTests {
     }
 
     @Test
+    @Tag("Should Failed")
     void assertSimpleFailedTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
@@ -36,6 +39,7 @@ public class SimpleTests {
     }
 
     @Test
+    @Tag("Should Success")
     void assertSimpleSuccessWithHamcrestTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
@@ -44,6 +48,7 @@ public class SimpleTests {
     }
 
     @Test
+    @Tag("Should Failed")
     void assertSimpleFailedWithHamcrestTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
