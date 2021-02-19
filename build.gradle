@@ -40,6 +40,6 @@ test {
 
 task should_success(type: Test){
     useJUnitPlatform {
-        includeTags 'Should Success'
+        includeTags 'Success'
     }
 }

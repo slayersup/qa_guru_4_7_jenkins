@@ -13,7 +13,7 @@ public class SimpleTests {
     static int result;
 
     @Test
-    @Tag("Should Success")
+    @Tag("Success")
     void assertSimpleSuccessTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
@@ -30,7 +30,7 @@ public class SimpleTests {
     }
 
     @Test
-    @Tag("Should Failed")
+    @Tag("Failed")
     void assertSimpleFailedTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
@@ -39,7 +39,7 @@ public class SimpleTests {
     }
 
     @Test
-    @Tag("Should Success")
+    @Tag("Success")
     void assertSimpleSuccessWithHamcrestTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
@@ -48,7 +48,7 @@ public class SimpleTests {
     }
 
     @Test
-    @Tag("Should Failed")
+    @Tag("Failed")
     void assertSimpleFailedWithHamcrestTest() {
         step("Set \"result\" to 2 + 2", () -> {
             result = 2 + 2;
