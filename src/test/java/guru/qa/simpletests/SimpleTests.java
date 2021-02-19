@@ -26,7 +26,6 @@ public class SimpleTests {
     }
 
     @Test
-    @Disabled
     void assertSimpleNegativeTest() {
         result = 2 + 2;
 
