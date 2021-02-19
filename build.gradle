@@ -38,8 +38,8 @@ test {
     useJUnitPlatform()
 }
 
-task should_success(type: Test){
+task positive_test(type: Test) {
     useJUnitPlatform {
-        includeTags 'Success'
+        includeTags 'positive'
     }
 }
